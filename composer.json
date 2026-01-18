@@ -1,15 +1,20 @@
 {
-  "name": "recursivetree/seat-info",
-  "description": "A SeAT module that adds a small article systems for example as a corporation bulletin",
+  "name": "solosgigifaye/seat-info-toastui",
+  "description": "A drop-in replacement for seat-info that swaps Ace for TOAST UI Editor.",
   "type": "seat-plugin",
-  "license": "MIT",
+  "license": "GPL-2.0-only",
   "authors": [
     {
-      "name": "recursive_tree",
-      "email": "recursivetreemail@gmail.com"
+      "name": "Community Maintainers",
+      "role": "Maintainer"
     }
   ],
-  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.1"
+  },
+  "replace": {
+    "recursivetree/seat-info": "self.version"
+  },
   "autoload": {
     "psr-4": {
       "RecursiveTree\\Seat\\InfoPlugin\\": "src/"
@@ -22,12 +27,6 @@
       ]
     }
   },
-  "require": {
-    "php": "^8.1",
-    "eveseat/services": "^5.0.1",
-    "laravel/framework": "^10.0",
-    "eveseat/eveapi": "^5.0.1",
-    "eveseat/web": "^5.0.0",
-    "recursivetree/seat-treelib": "^2.0"
-  }
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
