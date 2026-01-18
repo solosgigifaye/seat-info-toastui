@@ -1,3 +1,23 @@
+# seat-info-toastui
+
+This is a drop-in replacement for `recursivetree/seat-info` that replaces the Ace editor with TOAST UI Editor.
+
+## Install (SeAT)
+
+1) Remove `recursivetree/seat-info` from `SEAT_PLUGINS` if you have it.
+2) Add this package to `SEAT_PLUGINS`:
+
+SEAT_PLUGINS=solosgigifaye/seat-info-toastui
+
+3) Run your normal SeAT update/restart process (same as any other plugin install).
+
+## Notes
+- Data, permissions, routes, and rendering behavior match seat-info.
+- Only the editor UI is changed.
+
+
+
+
 # SeAT-Info
 SeAT-Info is a SeAT module that adds a small article systems for example as a corporation bulletin, or for explanations
 on how to use seat.
